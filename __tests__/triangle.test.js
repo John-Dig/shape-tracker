@@ -25,5 +25,10 @@ describe('Triangle', () => {
     expect(isoscTriangle.checkType()).toEqual("isosceles triangle");
   });
 });
+  //test 5
+  test('should correctly determine whether three lengths make an equilateral triangle', () => {
+    const equiTriangle = new Triangle(5,5,5)
+    expect(equiTriangle.checkType()).toEqual("equilateral triangle");
+  });
 
 const triangle = new Triangle(2,4,5);
